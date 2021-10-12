@@ -1,0 +1,19 @@
+.location-container
+{
+    margin-top: 2px;
+    background-color: rgb(234, 234, 234,);
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+    .location-icon
+    {
+        color:rgb(53, 53, 53,)
+    }
+    .location-text
+    {
+        font-family: $text-font;
+        font-weight: bold; 
+    }
+}

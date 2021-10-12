@@ -1,0 +1,94 @@
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(184, 184, 184, 0.59);
+          box-shadow: 0px 3px 5px 0px rgba(184, 184, 184, 0.59);
+}
+
+.logo-container .logo {
+  width: 50%;
+}
+
+.location-container {
+  margin-top: 2px;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 10px;
+}
+
+.location-container .location-icon {
+  color: #353535;
+}
+
+.location-container .location-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.explore-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f6f6f6;
+  padding: 40px;
+  gap: 20px;
+}
+
+.explore-container .explore-title {
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+}
+
+.explore-container .explore-subtitle {
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.explore-container .explore-button {
+  background: linear-gradient(2deg, #9356DC, #FF79DA);
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+  border: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.explore-container .explore-button a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
