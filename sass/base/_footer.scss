@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(53, 53, 53);
+    margin-top: 40px;
+
+    .footer-logo {
+        padding-left: 20px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        color: white;
+        width: 25%;
+    }
+    .footer-elements {
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 40px;
+        a{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            i{
+                padding-right: 10px;
+            }
+        }
+    
+    }
+}
