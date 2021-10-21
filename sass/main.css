@@ -322,6 +322,175 @@ footer .footer-elements a .fa-hands-helping {
   font-size: 30px;
 }
 
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .return-header {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 90px;
+  padding-left: 20px;
+}
+
+.container .return-logo {
+  width: 40%;
+}
+
+.display-food .background-top {
+  width: 101%;
+  position: absolute;
+}
+
+.display-food .food-page {
+  position: relative;
+  -webkit-transform: translate(0%, 20%);
+          transform: translate(0%, 20%);
+}
+
+.display-food .food-page .food-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 30px 30px 0px 0px;
+  border-width: 0px;
+  background-color: white;
+}
+
+.display-food .food-page .food-header h1 {
+  padding-left: 20px;
+}
+
+.display-food .food-page .food-header .like-icon {
+  padding-right: 40px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-food .food-page .food-titles:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 1px;
+  width: 12%;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.display-food .food-page .food-titles {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.display-food .food-page .food-card {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 13px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display-food .food-page .food-card .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+.display-food .food-page .food-card .card-text .card-title {
+  font-weight: bold;
+}
+
+.display-food .food-page .food-card .card-text .card-desc {
+  font-size: 15px;
+}
+
+.display-food .food-page .food-card .card-price {
+  font-weight: bold;
+  padding-top: 27px;
+  font-size: 15px;
+}
+
+.display-food .command {
+  background: linear-gradient(2deg, #9356DC, #FF79DA);
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 60px;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+  border: hidden;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display-food .command .btn-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.second-footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 300px;
+}
+
 body {
   margin: 0px;
 }
