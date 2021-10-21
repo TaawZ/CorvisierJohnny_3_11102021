@@ -117,6 +117,9 @@ footer .footer-elements a .fa-hands-helping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 60px;
   margin-right: 60px;
   border-radius: 50px;
@@ -240,7 +243,13 @@ footer .footer-elements a .fa-hands-helping {
   padding-top: 20px;
 }
 
-.card-display .card {
+.card-display .card-container {
+  position: relative;
+}
+
+.card-display .card-container .card {
+  color: black;
+  text-decoration: none;
   position: relative;
   width: 95%;
   display: -webkit-box;
@@ -261,7 +270,7 @@ footer .footer-elements a .fa-hands-helping {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-display .card .card-photo {
+.card-display .card-container .card .card-photo {
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -274,7 +283,7 @@ footer .footer-elements a .fa-hands-helping {
   border-bottom: hidden;
 }
 
-.card-display .card .new {
+.card-display .card-container .card .new {
   font-weight: bold;
   padding: 5px 10px 5px 10px;
   background-color: #99E2D0;
@@ -288,7 +297,7 @@ footer .footer-elements a .fa-hands-helping {
           transform: translate(-50%, -50%);
 }
 
-.card-display .card .card-content {
+.card-display .card-container .card .card-content {
   font-size: 22px;
   margin-left: 10px;
   display: -webkit-box;
@@ -301,7 +310,7 @@ footer .footer-elements a .fa-hands-helping {
   padding-top: 10px;
 }
 
-.card-display .card .card-content .card-text-content {
+.card-display .card-container .card .card-content .card-text-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,14 +321,18 @@ footer .footer-elements a .fa-hands-helping {
   gap: 5px;
 }
 
-.card-display .card .card-content .card-text-content .card-title {
+.card-display .card-container .card .card-content .card-text-content .card-title {
   font-weight: bold;
 }
 
-.card-display .card .card-heart {
+.card-display .card-container .card-heart {
   padding-right: 20px;
   padding-top: 15px;
   font-size: 30px;
+  z-index: 900;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 .container {
@@ -331,6 +344,8 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .container .return-header {
+  color: black;
+  text-decoration: none;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +430,8 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .display-food .food-page .food-card {
+  -webkit-animation: fadein 2s, down 2s;
+          animation: fadein 2s, down 2s;
   font-size: 20px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -483,6 +500,44 @@ footer .footer-elements a .fa-hands-helping {
   font-family: "Roboto", sans-serif;
   color: white;
   font-weight: bold;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transition: opacity 1;
+    transition: opacity 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transition: opacity 1;
+    transition: opacity 1;
+  }
+}
+
+@-webkit-keyframes down {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 20px;
+  }
+}
+
+@keyframes down {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 20px;
+  }
 }
 
 .second-footer {

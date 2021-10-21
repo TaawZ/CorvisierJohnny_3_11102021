@@ -48,6 +48,7 @@
             padding-top: 20px;
         }
         .food-card {
+            animation: fadein 2s, down 2s;
             font-size: 20px;
             font-weight: bold;
             font-family: $text-font;
@@ -98,5 +99,22 @@
             color: white;
             font-weight: bold;
         }
+    }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        transition: opacity 1;
+    }
+}
+@keyframes down {
+    from{
+        margin-top: 0px;
+    }
+    to{
+        margin-top: 20px;
     }
 }
