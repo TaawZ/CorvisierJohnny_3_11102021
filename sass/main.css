@@ -430,21 +430,24 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .display-food .food-page .food-card {
-  -webkit-animation: fadein 2s, down 2s;
-          animation: fadein 2s, down 2s;
+  overflow: visible;
+  -webkit-animation: fadein 1s, down 1s;
+          animation: fadein 1s, down 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   font-size: 20px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-left: 13px;
   margin-right: 20px;
   margin-top: 20px;
-  padding: 15px;
+  padding-left: 10px;
   border-radius: 20px;
   border-style: solid;
   border-width: 0px;
@@ -452,29 +455,73 @@ footer .footer-elements a .fa-hands-helping {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.display-food .food-page .food-card:hover .circle-container {
+  -webkit-animation: checkbox 1s;
+          animation: checkbox 1s;
+}
+
+.display-food .food-page .food-card:hover .fa-check-circle {
+  -webkit-animation: checkbox-rotation 500ms;
+          animation: checkbox-rotation 500ms;
+}
+
 .display-food .food-page .food-card .card-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 3px;
+  min-width: 0;
 }
 
 .display-food .food-page .food-card .card-text .card-title {
   font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .display-food .food-page .food-card .card-text .card-desc {
   font-size: 15px;
+  padding-bottom: 10px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .display-food .food-page .food-card .card-price {
   font-weight: bold;
-  padding-top: 27px;
+  padding-top: 40px;
+  padding-right: 20px;
   font-size: 15px;
+}
+
+.display-food .food-page .food-card .circle-container {
+  overflow: hidden;
+  width: 0px;
+  padding-top: 25px;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.display-food .food-page .food-card .circle-container .fa-check-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .display-food .command {
@@ -540,10 +587,141 @@ footer .footer-elements a .fa-hands-helping {
   }
 }
 
+@-webkit-keyframes checkbox {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes checkbox {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+@-webkit-keyframes checkbox-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes checkbox-rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .second-footer {
   position: absolute;
   width: 100%;
   margin-top: 300px;
+}
+
+.loader-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #99E2D0;
+  -webkit-animation: fadeout 1s, dissapear 1s;
+          animation: fadeout 1s, dissapear 1s;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.loader-container .loader {
+  z-index: -1;
+  margin-left: 30%;
+  margin-top: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 16px solid #FF79DA;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-bottom: 16px solid #FF79DA;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s;
+  animation: spin 1s, fadeout 1s, dissapear 1s;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes dissapear {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes dissapear {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 body {

@@ -48,35 +48,71 @@
             padding-top: 20px;
         }
         .food-card {
-            animation: fadein 2s, down 2s;
+            overflow: visible;
+            animation: fadein 1s, down 1s;
+            animation-delay: 1s;
             font-size: 20px;
             font-weight: bold;
             font-family: $text-font;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             margin-left: 13px;
             margin-right: 20px;
             margin-top: 20px;
-            padding: 15px;
+            padding-left: 10px;
             border-radius: 20px;
             border-style: solid;
             border-width: 0px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            &:hover .circle-container
+            {
+            animation: checkbox 1s;
+            }
+            &:hover .fa-check-circle
+            {
+            animation: checkbox-rotation 500ms;
+            }
             .card-text {
-                display: flex;
+                display: block;
+                flex: 1;
+                overflow: hidden;
                 flex-direction: column;
                 gap: 3px;
+                min-width: 0;
                 .card-title {
                     font-weight: bold;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    min-width: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
                 .card-desc {
                     font-size: 15px;
+                    padding-bottom: 10px;
+                    min-width: 0;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
             }
             .card-price {
                 font-weight: bold;
-                padding-top: 27px;
+                padding-top: 40px;
+                padding-right: 20px;
                 font-size: 15px;
+            }
+            .circle-container{
+                overflow: hidden;
+                width: 0px;
+                padding-top: 25px;
+                background-color: $tertiary-color;
+                color: white;
+                border-radius: 0px 20px 20px 0px;
+                .fa-check-circle{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
@@ -117,4 +153,21 @@
     to{
         margin-top: 20px;
     }
+}
+@keyframes checkbox {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 200px;
+    }
+}
+@keyframes checkbox-rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
