@@ -68,11 +68,33 @@
         .card-heart {
             padding-right: 20px;
             padding-top: 15px;
-            font-size: 30px;
-            z-index: 900;
+            font-size: 32px;
+            z-index: 1;
             position: absolute;
-            right: 20px;
-            bottom: 20px;
+            right: 19px;
+            bottom: 19px;
         }
+        .card-like {
+            padding-right: 20px;
+            padding-top: 15px;
+            font-size: 32px;
+            z-index: 1;
+            position: absolute;
+            right: 19px;
+            bottom: 19px;
+            color: transparent;
+            &:hover {
+                animation: like 1s;
+            }
+        }
+    }
+}
+
+@keyframes like {
+    from{
+        color: transparent;
+    }
+    to{
+        color: red;
     }
 }

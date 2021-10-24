@@ -1,29 +1,23 @@
-.explore-container
-{
+.explore-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: $text-font;
-    background-color: rgb(246, 246, 246,);
+    background-color: rgb(246, 246, 246);
     padding: 40px;
     gap: 20px;
-    
-    
-    
-    .explore-title
-    {
+
+    .explore-title {
         font-weight: bolder;
         font-size: 25px;
         text-align: center;
     }
-    .explore-subtitle
-    {
+    .explore-subtitle {
         font-weight: 600;
         text-align: center;
         font-size: 16px;
     }
-    .explore-button
-    {
+    .explore-button {
         background: linear-gradient(2deg, $primary-color, $secondary-color);
         margin-top: 20px;
         display: flex;
@@ -34,15 +28,16 @@
         padding: 15px 20px 15px 20px;
         border: hidden;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
-        a
-        {
+        &:hover {
+            background: linear-gradient(2deg, lighten($primary-color, 5%), lighten($secondary-color, 5%));
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        a {
             font-size: 16px;
             text-decoration: none;
             font-weight: bold;
             color: white;
             font-family: $text-font;
         }
-        
     }
 }

@@ -64,22 +64,21 @@
             border-style: solid;
             border-width: 0px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            &:hover .circle-container
-            {
-            animation: checkbox 1s;
+            &:hover .circle-container {
+                animation: checkbox 1s;
             }
-            &:hover .fa-check-circle
-            {
-            animation: checkbox-rotation 500ms;
+            &:hover .fa-check-circle {
+                animation: checkbox-rotation 500ms;
             }
             .card-text {
-                display: block;
+                display: flex;
                 flex: 1;
                 overflow: hidden;
                 flex-direction: column;
                 gap: 3px;
                 min-width: 0;
                 .card-title {
+                    display: block;
                     font-weight: bold;
                     padding-top: 10px;
                     padding-bottom: 5px;
@@ -88,6 +87,7 @@
                     white-space: nowrap;
                 }
                 .card-desc {
+                    display: block;
                     font-size: 15px;
                     padding-bottom: 10px;
                     min-width: 0;
@@ -96,19 +96,20 @@
                 }
             }
             .card-price {
+                display: block;
                 font-weight: bold;
                 padding-top: 40px;
                 padding-right: 20px;
                 font-size: 15px;
             }
-            .circle-container{
+            .circle-container {
                 overflow: hidden;
                 width: 0px;
                 padding-top: 25px;
                 background-color: $tertiary-color;
                 color: white;
                 border-radius: 0px 20px 20px 0px;
-                .fa-check-circle{
+                .fa-check-circle {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -126,7 +127,11 @@
         padding: 15px 20px 15px 20px;
         border: hidden;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        .btn-text{
+        &:hover {
+            background: linear-gradient(2deg, lighten($primary-color, 5%), lighten($secondary-color, 5%));
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .btn-text {
             padding-left: 20px;
             padding-right: 20px;
             text-decoration: none;
@@ -139,35 +144,34 @@
 }
 
 @keyframes fadein {
-    from{
+    from {
         opacity: 0;
     }
-    to{
+    to {
         transition: opacity 1;
     }
 }
 @keyframes down {
-    from{
+    from {
         margin-top: 0px;
     }
-    to{
+    to {
         margin-top: 20px;
     }
 }
 @keyframes checkbox {
-    from{
+    from {
         width: 0px;
     }
-    to{
-        width: 200px;
+    to {
+        width: 60px;
     }
 }
 @keyframes checkbox-rotation {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
-    
 }

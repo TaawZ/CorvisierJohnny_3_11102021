@@ -4,11 +4,10 @@
     height: 100%;
     background-color: $tertiary-color;
     animation: fadeout 1s, dissapear 1s;
-    z-index: -1;
     visibility: hidden;
-
+    z-index :-100;
     .loader {
-        z-index: -1;
+        z-index: -100;
         margin-left: 30%;
         margin-top: 60%;
         display: flex;
@@ -20,8 +19,8 @@
         border-bottom: 16px solid $secondary-color;
         width: 120px;
         height: 120px;
-        -webkit-animation: spin 1s;
-        animation: spin 1s, fadeout 1s, dissapear 1s;
+        -webkit-animation: spin 1s ease-in-out;
+        animation: spin 1s ease-in-out, fadeout 1s, dissapear 1s;
         visibility: hidden;
 
     }
@@ -46,17 +45,17 @@
 }
 @keyframes fadeout {
     0% {
-        z-index: 2;
+        z-index: 2000;
     }
     100% {
         z-index: -1;
     }
 }
 @keyframes dissapear {
-    0% {
+    from {
         visibility: visible;
     }
-    100% {
-        visibility: hidden;
+    to {
+        visibility: none;
     }
 }
