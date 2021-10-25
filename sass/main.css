@@ -585,6 +585,10 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .display-food .command {
+  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: linear-gradient(2deg, #9356DC, #FF79DA);
   margin-top: 60px;
   display: -webkit-box;
@@ -854,7 +858,8 @@ footer .footer-elements a .fa-hands-helping {
     height: 300px;
   }
   .display-food .command {
-    margin-left: 45%;
+    margin-left: 40%;
+    width: 15%;
   }
 }
 

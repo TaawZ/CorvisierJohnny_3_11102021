@@ -120,6 +120,8 @@
         }
     }
     .command {
+        width: 40%;
+        justify-content: center;
         background: linear-gradient(2deg, $primary-color, $secondary-color);
         margin-top: 60px;
         display: flex;
