@@ -535,6 +535,7 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .display-food .food-page .food-card .card-text .card-title {
+  overflow: hidden;
   display: block;
   font-weight: bold;
   padding-top: 10px;
@@ -545,6 +546,7 @@ footer .footer-elements a .fa-hands-helping {
 }
 
 .display-food .food-page .food-card .card-text .card-desc {
+  overflow: hidden;
   display: block;
   font-size: 15px;
   padding-bottom: 10px;
