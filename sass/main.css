@@ -302,6 +302,11 @@ footer .footer-elements a .fa-hands-helping {
   border-bottom: hidden;
 }
 
+.card-display .card-container .card .modify {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .card-display .card-container .card .new {
   font-weight: bold;
   padding: 5px 10px 5px 10px;
@@ -426,9 +431,16 @@ footer .footer-elements a .fa-hands-helping {
   position: relative;
   -webkit-transform: translate(0%, 20%);
           transform: translate(0%, 20%);
+  background-color: white;
+  border-style: solid;
+  border-radius: 30px 30px 0px 0px;
+  border-width: 0px;
 }
 
 .display-food .food-page .food-header {
+  border-style: solid;
+  border-radius: 30px 30px 0px 0px;
+  border-width: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,9 +449,6 @@ footer .footer-elements a .fa-hands-helping {
           justify-content: space-between;
   font-family: "Shrikhand", sans-serif;
   font-size: 20px;
-  border-style: solid;
-  border-radius: 30px 30px 0px 0px;
-  border-width: 0px;
   background-color: white;
 }
 
@@ -866,4 +875,3 @@ footer .footer-elements a .fa-hands-helping {
 body {
   margin: 0px;
 }
-/*# sourceMappingURL=main.css.map */
