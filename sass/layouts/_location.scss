@@ -4,16 +4,21 @@
     background-color: rgb(234, 234, 234,);
     display: flex;
     justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     gap: 10px;
-    .location-icon
+
+    .location-icon-container
     {
-        color:rgb(53, 53, 53,)
+        color:rgb(53, 53, 53,);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .location-text
     {
         font-family: $text-font;
-        font-weight: bold; 
-    }
+        font-size: 16px;
+        font-weight: 100; 
+        }
 }

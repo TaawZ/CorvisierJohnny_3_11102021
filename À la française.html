@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d652767338.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="sass/base/box-sizing.css" type="text/css" media="all">
@@ -18,13 +18,9 @@
 </head>
 
 <body>
-    <div class="loader-container">
-        <div class="loader">
-        </div>
-    </div>
     <header>
         <div class="container">
-            <a class="return-header" href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <a class="return-header" href="Acceuil.html"><i class="fas fa-arrow-left"></i></a>
             <img class="return-logo" src="images/logo/ohmyfood@2x.svg" alt="OMF logo">
         </div>
     </header>
@@ -36,9 +32,10 @@
                 <h1>À la française</h1>
                 <i class="far fa-heart like-icon"></i>
             </div>
-            <div class="food-titles">
+            <div class="menu-list">
+            <h1 class="food-titles">
                 ENTRÉES
-            </div>
+            </h1>
             <div class="food-card">
                 <div class="card-text">
                     <div class="card-title">Ravioles de foie gras</div>
@@ -79,9 +76,11 @@
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
-            <div class="food-titles">
-                PLATS
+            <div class="menu-list">
             </div>
+            <h2 class="food-titles">
+                PLATS
+            </h2>
             <div class="food-card">
                 <div class="card-text">
                     <div class="card-title">Noix de coquilles Saint-Jacques</div>
@@ -112,9 +111,11 @@
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
-            <div class="food-titles">
-                DESSERTS
+            <div class="menu-list">
             </div>
+            <h3 class="food-titles">
+                DESSERTS
+            </h3>
             <div class="food-card">
                 <div class="card-text">
                     <div class="card-title">Macaron noisette et chocolat</div>
@@ -145,16 +146,17 @@
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
+        </div>
             <div class="command"><a href="" class="btn-text">Commander</a></div>
         </div>
     </section>
-    <footer class="second-footer">
+    <footer>
         <img class="footer-logo" src= "images/logo/ohmyfood@2x.svg" alt="footer-logo">
         <div class="footer-elements">
             <a href="#"> <i class="fas fa-utensils ustensil-icon"></i>Proposer un restaurant</a>
             <a href="#"> <i class="fas fa-hands-helping handshake-icon"></i>Devenir partenaire</a>
             <a href="#">Mention légales</a>
-            <a href="#">Contact</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
         </div>
     </footer>
 </body>

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d652767338.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="sass/base/box-sizing.css" type="text/css" media="all">
@@ -18,41 +18,38 @@
 </head>
 
 <body>
-    <div class="loader-container">
-        <div class="loader">
-        </div>
-    </div>
     <header>
         <div class="container">
-            <a class="return-header" href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <a class="return-header" href="Acceuil.html"><i class="fas fa-arrow-left"></i></a>
             <img class="return-logo" src="images/logo/ohmyfood@2x.svg" alt="OMF logo">
         </div>
     </header>
     <section class="display-food">
-        <img class="background-top" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        <img class="background-top" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="background-top">
         <div class="food-page">
             <div class="food-header">
-                <h1>La palette du goût</h1>
+                <h1>Le délice des sens</h1>
                 <i class="far fa-heart like-icon"></i>
             </div>
-            <div class="food-titles">
+            <div class="menu-list"></div>
+            <h1 class="food-titles">
                 ENTRÉES
-            </div>
+            </h1>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Fricassée d'escargot</div>
-                    <div class="card-desc">Au piment d'Espelette</div>
+                    <div class="card-title">Tartare de poulpe acidulé</div>
+                    <div class="card-desc">Aux zestes d'orange</div>
                 </div>
                 <div class="card-price">25€</div>
                 <span class= "circle-container">
-                <i class="fas fa-check-circle"></i>
-            </span>
+                    <i class="fas fa-check-circle"></i>
+                </span>
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Foie gras de canard mi-cuit</div>
-                    <div class="card-desc">Et ses copeaux de truffe noire</div>
+                    <div class="card-title">Velouté de légumes d'antan</div>
+                    <div class="card-desc">Carotte, panais, topinambour</div>
                 </div>
                 <div class="card-price">35€</div>
                 <span class= "circle-container">
@@ -61,21 +58,22 @@
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Oeuf au plat</div>
-                    <div class="card-desc">Assaisonné à la truffe sur lit de caviar</div>
+                    <div class="card-title">Soupe à l'oignon</div>
+                    <div class="card-desc">Revisitée</div>
                 </div>
                 <div class="card-price">20€</div>
                 <span class= "circle-container">
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
-            <div class="food-titles">
+            <div class="menu-list">
+            <h2 class="food-titles">
                 PLATS
-            </div>
+            </h2>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Filet de boeuf aux herbes</div>
-                    <div class="card-desc">Accompagné de sa ribambelle de légumes</div>
+                    <div class="card-title">Coquilles Saint-Jacques</div>
+                    <div class="card-desc">Accompagnées d'une purée de panais</div>
                 </div>
                 <div class="card-price">40€</div>
                 <span class= "circle-container">
@@ -84,8 +82,8 @@
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Parmentier de queue de boeuf</div>
-                    <div class="card-desc">À la truffe noire sur sa purée de panais</div>
+                    <div class="card-title">Magret de canard</div>
+                    <div class="card-desc">Et parmentier de pommes de terre</div>
                 </div>
                 <div class="card-price">35€</div>
                 <span class= "circle-container">
@@ -94,21 +92,23 @@
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Filet de turbot</div>
-                    <div class="card-desc">Aux agrumes</div>
+                    <div class="card-title">Pigeonneau d’Ille-et-Vilaine</div>
+                    <div class="card-desc">Sur son lit de gnocchis aux légumes</div>
                 </div>
                 <div class="card-price">44€</div>
                 <span class= "circle-container">
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
-            <div class="food-titles">
+        </div>
+            <div class="menu-list">
+            <h3 class="food-titles">
                 DESSERTS
-            </div>
+            </h3>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Paris-Brest</div>
-                    <div class="card-desc">Revisité</div>
+                    <div class="card-title">Pétales de violettes glacés</div>
+                    <div class="card-desc">Et purée de noisettes</div>
                 </div>
                 <div class="card-price">18€</div>
                 <span class= "circle-container">
@@ -117,34 +117,35 @@
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Macaron au chocolat d'exception</div>
-                    <div class="card-desc">Et glace à la vanille de Madagascar</div>
+                    <div class="card-title">Fondant au chocolat</div>
+                    <div class="card-desc">Revisité</div>
                 </div>
                 <div class="card-price">22€</div>
-                <div class= "circle-container">
+                <span class= "circle-container">
                     <i class="fas fa-check-circle"></i>
-                </div>
+                </span>
             </div>
             <div class="food-card">
                 <div class="card-text">
-                    <div class="card-title">Mousse au chocolat</div>
-                    <div class="card-desc">Au piment d'Espelette et à la truffe noire</div>
+                    <div class="card-title">Millefeuille croustillant</div>
+                    <div class="card-desc">Myrtilles et pâte d’amande</div>
                 </div>
                 <div class="card-price">23€</div>
                 <span class= "circle-container">
                     <i class="fas fa-check-circle"></i>
                 </span>
             </div>
+        </div>
             <div class="command"><a href="" class="btn-text">Commander</a></div>
         </div>
     </section>
-    <footer class="second-footer">
+    <footer>
         <img class="footer-logo" src= "images/logo/ohmyfood@2x.svg" alt="footer-logo">
         <div class="footer-elements">
             <a href="#"> <i class="fas fa-utensils ustensil-icon"></i>Proposer un restaurant</a>
             <a href="#"> <i class="fas fa-hands-helping handshake-icon"></i>Devenir partenaire</a>
             <a href="#">Mention légales</a>
-            <a href="#">Contact</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
         </div>
     </footer>
 </body>
