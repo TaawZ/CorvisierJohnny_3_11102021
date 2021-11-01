@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EAAE,iBAAiB;EACzC,eAAe,EAAE,UAAU;EAAE,2BAA2B;EACxD,kBAAkB,EAAE,UAAU;EAAE,kCAAkC;CACpE",
-    "sources": [
-        "box-sizing.scss"
-    ],
-    "names": [],
-    "file": "box-sizing.css"
-}
