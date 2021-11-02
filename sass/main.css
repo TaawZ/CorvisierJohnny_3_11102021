@@ -106,13 +106,13 @@ footer .footer-elements a .fa-hands-helping {
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
   padding: 40px;
-  gap: 20px;
 }
 
 .explore-container .explore-title {
   font-weight: bolder;
   font-size: 25px;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .explore-container .explore-subtitle {
@@ -165,7 +165,7 @@ footer .footer-elements a .fa-hands-helping {
   margin-left: 15px;
 }
 
-.how-to-display h3 {
+.how-to-display h1 {
   padding-top: 20px;
   font-size: 25px;
   font-family: "Roboto", sans-serif;
@@ -271,7 +271,7 @@ footer .footer-elements a .fa-hands-helping {
   gap: 20px;
 }
 
-.card-display h4 {
+.card-display h1 {
   font-size: 25px;
   font-weight: 900;
   margin-left: 15px;
@@ -551,6 +551,66 @@ footer .footer-elements a .fa-hands-helping {
 .display-food .food-page .food-card:hover .fa-check-circle {
   -webkit-animation: checkbox-rotation 500ms;
           animation: checkbox-rotation 500ms;
+}
+
+.display-food .food-page .food-card.card-animation:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.display-food .food-page .food-card.card-animation:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.display-food .food-page .food-card.card-animation:nth-child(5) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.display-food .food-page .food-card.card-animation-2:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.display-food .food-page .food-card.card-animation-2:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.display-food .food-page .food-card.card-animation-2:nth-child(4) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.display-food .food-page .food-card.card-animation-3:nth-child(2) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.display-food .food-page .food-card.card-animation-3:nth-child(3) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.display-food .food-page .food-card.card-animation-3:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.display-food .food-page .food-card.card-animation-4:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.display-food .food-page .food-card.card-animation-4:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.display-food .food-page .food-card.card-animation-4:nth-child(5) {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
 }
 
 .display-food .food-page .food-card .card-text {
@@ -846,7 +906,7 @@ footer .footer-elements a .fa-hands-helping {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .card-display h4 {
+  .card-display h1 {
     width: 100%;
   }
   .card-display .card-container {
